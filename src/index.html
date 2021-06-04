@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui">
+
+    <script crossorigin src="https://unpkg.com/react/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.0.2/browser/pixi.js" integrity="sha512-bEouBuDjAc7JfXa68qgiaTUjn3priZJfv1QStbGvYYEofUZezKOr2ekOzp8sr9q71SYt0pKzh/QMcI0yc+yVnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script crossorigin src="https://unpkg.com/@inlet/react-pixi/dist/react-pixi.umd.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>Human Risk Games!</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        
+        body {
+            position: fixed;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(steelblue, beige);
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            text-align: center;
+            /* background-image: url(assets/img/bg.png); */
+            background-repeat: repeat-y
+        }
+        
+        canvas {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            /* background-image: url("assets/img/bg.png"); */
+            background-repeat: repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+</body>
+
+</html>

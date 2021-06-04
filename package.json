@@ -1,0 +1,44 @@
+{
+  "name": "g1",
+  "version": "0.0.0",
+  "description": "g1",
+  "license": "ISC",
+  "main": "./src/index.html",
+  "author": {
+    "name": ""
+  },
+  "scripts": {
+    "run-dev": "cross-env NODE_ENV=dev webpack serve --mode=development --progress",
+    "run-test": "cross-env NODE_ENV=test webpack serve --mode=development --progress",
+    "run-pro": "cross-env NODE_ENV=pro webpack serve --mode=production --progress",
+    "build-dev": "cross-env NODE_ENV=dev webpack --mode=development --progress --stats-error-details",
+    "build-test": "cross-env NODE_ENV=test webpack --mode=development --progress --stats-error-details",
+    "build-pro": "cross-env NODE_ENV=pro webpack --mode=production --progress --stats-error-details",
+    "clean:modules": "powershell -command Remove-Item -LiteralPath ./node_modules -Force -Recurse",
+    "analyzer": "webpack --profile --json > stats.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-transform-react-jsx": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@inlet/react-pixi": "^6.5.4",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.3.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "pixi.js": "^6.0.4",
+    "react": "^17.0.2",
+    "webpack": "^5.38.1",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
