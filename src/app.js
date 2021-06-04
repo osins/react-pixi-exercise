@@ -1,12 +1,12 @@
 const { Stage, Text, TextStyle , TilingSprite} = ReactPixi;
 
 const App = () => (
-<Stage width={375} height={812}>
+<Stage width={375} height={812} options={{ backgroundColor: 0xeef1f5 }}>
 <TilingSprite
     image={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/693612/p2.jpeg'}
     width={375}
     height={812}
-    tilePosition={{ x: 0, y: 0 }}
+    tilePosition={{ x: 100, y: 150 }}
     tileScale={{ x: 0.1, y: 2 }}
   />
 <Text
