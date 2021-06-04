@@ -16,8 +16,10 @@ const App = () => (
     y={150}
     style={
     new PIXI.TextStyle({
+        fontFamily : 'Arial', 
         fontSize: 42,
         fill: "#000000",
+        align: "left",
     })
     }
   />
